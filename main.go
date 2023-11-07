@@ -22,7 +22,7 @@ func scanPort(protocol, hostname string, port int, wg *sync.WaitGroup) {
 func main() {
 	var wg sync.WaitGroup
 	protocol := "tcp"
-	hostname := "scanme.nmap.org"
+	hostname := "localhost"
 
 	for port := 1; port <= 1024; port++ {
 		wg.Add(1)
